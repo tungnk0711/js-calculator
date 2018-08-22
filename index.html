@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Add() {
+            var first_num = document.getElementById('first_num').value;
+            var second_num = document.getElementById('second_num').value;
+            var result = eval(first_num) + eval(second_num);
+            // hien thi ket qua
+            document.getElementById("result").innerHTML = result.toString();
+        }
+
+        function Sub() {
+            var first_num = document.getElementById('first_num').value;
+            var second_num = document.getElementById('second_num').value;
+            var result = eval(first_num) - eval(second_num);
+            // hien thi ket qua
+            document.getElementById("result").innerHTML = result.toString();
+        }
+
+        function Mul() {
+            var first_num = document.getElementById('first_num').value;
+            var second_num = document.getElementById('second_num').value;
+            var result = eval(first_num) * eval(second_num);
+            // hien thi ket qua
+            document.getElementById("result").innerHTML = result.toString();
+        }
+
+        function Div() {
+            var first_num = document.getElementById('first_num').value;
+            var second_num = document.getElementById('second_num').value;
+            var result = eval(first_num) / eval(second_num);
+            // hien thi ket qua
+            document.getElementById("result").innerHTML = result.toString();
+        }
+    </script>
+
+</head>
+<body>
+First Number : <input type="text" id="first_num" value=""><br>
+Second Number: <input type="text" id="second_num" value=""><br>
+<button onclick="Add()">Add</button>
+<button onclick="Sub()">Sub</button>
+<button onclick="Mul()">Mul</button>
+<button onclick="Div()">Div</button>
+Result: <label id="result"></label>
+</body>
+</html>
